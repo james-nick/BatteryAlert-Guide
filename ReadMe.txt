@@ -38,7 +38,7 @@ Save this file as:
 Batterychecker.ps1
 
 Choose a folder you will remember, e.g.:
-C:\Users\Your name\OneDrive\Documents\Batterychecker.ps1
+C:\Users\<USERNAME>\OneDrive\Documents\Batterychecker.ps1
 
 
 2. Create the VBScript Launcher
@@ -53,7 +53,7 @@ Copy paste the isolated paragraph. !!!EXAMPLE LOCATION BELOW CHANGE THE LOCATION
 
 
 Set objShell = CreateObject("Wscript.Shell")
-objShell.Run "powershell.exe -ExecutionPolicy Bypass -File ""C:\Users\YOUR NAME\OneDrive\Documents\Batterychecker.ps1""", 0, False
+objShell.Run "powershell.exe -ExecutionPolicy Bypass -File ""C:\Users\<USERNAME>\OneDrive\Documents\Batterychecker.ps1""", 0, False
 
 
 
@@ -66,7 +66,7 @@ Save this as:
 RunBatteryChecker.vbs
 
 Save it in a convenient location, for example:
-C:\Users\Jiach\OneDrive\Documents\RunBatteryChecker.vbs                 NOT AUTO WHEN STARTUP SEE NEXT STEP FOR AUTO
+C:\Users\<USERNAME>\OneDrive\Documents\RunBatteryChecker.vbs                 NOT AUTO WHEN STARTUP SEE NEXT STEP FOR AUTO
 
 
 3. Place the VBScript in the Startup Folder
