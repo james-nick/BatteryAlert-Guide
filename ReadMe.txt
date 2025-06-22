@@ -3,7 +3,7 @@ Step: Open Notepad (or any plain text editor) and paste the following script:
 
 COpy and paste the isolated text paragraph.
 
-
+!!!Note: You can change the sound to a custom audio file here:  (New-Object Media.SoundPlayer "Do not remove quotation !!Where your audio is!! Change in the code block below.").PlaySync() !!!
 
 
 
@@ -15,7 +15,10 @@ while ($true) {
   $charging = $batt.BatteryStatus -in @(2, 6)
 
   if ($charging -and $pct -ge 80) {
-    [System.Media.SystemSounds]::Exclamation.Play()
+    # Play custom WAV file
+    (New-Object Media.SoundPlayer "C:\Windows\Media\Alarm05.wav").PlaySync()
+
+    # Show message box
     [System.Windows.Forms.MessageBox]::Show(
       "Battery is charging and >= 80% - unplug now!",
       "Battery Alert",
@@ -28,6 +31,7 @@ while ($true) {
 
   Start-Sleep -Seconds 60
 }
+
 
 
 
